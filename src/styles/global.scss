@@ -1,16 +1,16 @@
 :root {
-  --primary: #6979f8;
-  --primary-hover: #a5affb;
-  --second: #be52f2;
-  --second-hover: #dba5f5;
-  --success: #00c48c;
-  --success-hover: #7ddfc3;
-  --info: #0084f4;
-  --info-hover: #66b5f8;
-  --warning: #ffa26b;
-  --warning-hover: #ffc7a6;
-  --danger: #ff647c;
-  --danger-hover: #fdafbb;
+  --primary-color: #6979f8;
+  --primary-color-hover: #a5affb;
+  --second-color: #be52f2;
+  // --second-hover: #dba5f5;
+  // --success: #00c48c;
+  // --success-hover: #7ddfc3;
+  // --info: #0084f4;
+  // --info-hover: #66b5f8;
+  // --warning: #ffa26b;
+  // --warning-hover: #ffc7a6;
+  // --danger: #ff647c;
+  // --danger-hover: #fdafbb;
 }
 
 * {
@@ -25,14 +25,14 @@ body {
 a {
   color: var(--primary-color);
   text-decoration: none;
-  color: black;
+  // color: black;
 }
 
-.line {
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 20px;
-  &_block {
-    display: block;
-  }
-}
+// .line {
+//   display: flex;
+//   flex-wrap: wrap;
+//   margin-bottom: 20px;
+//   &_block {
+//     display: block;
+//   }
+// }
