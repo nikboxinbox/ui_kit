@@ -52,10 +52,10 @@ div(:class="['sidebar', { sidebar_isopen: openSidebar }]")
     font-weight: bold;
     margin-bottom: 10px;
     &:hover {
-      border-color: var(--primary);
+      border-color: $primary;
     }
     &_active {
-      border-color: var(--primary);
+      border-color: black;
       color: black;
     }
   }

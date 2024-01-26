@@ -7,6 +7,7 @@ header.header
 .header {
   background: #fff;
   font-weight: bold;
+  font-size: 32px;
   padding: 0 20px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.07);
   height: 62px;
