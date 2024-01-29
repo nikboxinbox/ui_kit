@@ -1,17 +1,31 @@
 <script setup lang="ts">
-defineProps({
+const props = defineProps({
   label: {
     type: String,
     default: "Button",
   },
   color: {
+    type: String,
     default: "primary",
+  },
+  disabled: {
+    type: String,
+    default: false,
+  },
+  outlined: {
+    type: String,
+    default: false,
   },
 });
 </script>
 
 <template lang="pug">
-button(:class="['btn', `btn_${color}`]") Вход 
+
+button(
+  :class="['btn', `btn_${color}`,{[`btn_${color}_outlined`]: outlined}]"
+  :style="variables"
+  ) {{label}} 
+
 </template>
 
 <style lang="scss" scoped>
@@ -29,7 +43,7 @@ button(:class="['btn', `btn_${color}`]") Вход
   transition: 0.2s;
 
   color: white;
-  font-family: Inter;
+  font-family: Inter, sans-serif;
   font-size: 20px;
   font-weight: 600;
   line-height: 24px;
@@ -42,6 +56,17 @@ button(:class="['btn', `btn_${color}`]") Вход
     }
     &:active {
       background: $primary-active;
+    }
+
+    &_outlined {
+      background: transparent;
+      color: $primary;
+      &:hover {
+        background: $neutral-50;
+      }
+      &:active {
+        background: $secondary;
+      }
     }
   }
 }
