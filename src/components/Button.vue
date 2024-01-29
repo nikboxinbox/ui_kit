@@ -9,11 +9,11 @@ const props = defineProps({
     default: "primary",
   },
   disabled: {
-    type: String,
+    type: Boolean,
     default: false,
   },
   outlined: {
-    type: String,
+    type: Boolean,
     default: false,
   },
 });
