@@ -22,7 +22,7 @@ const props = defineProps({
 <template lang="pug">
 
 button(
-  :class="['btn', `btn_${color}`,{[`btn_${color}_outlined`]: outlined}]"
+  :class="['btn', `btn_${color}`,{[`btn_${color}_outlined`]: outlined}, {'btn_disabled': disabled}]"
   :style="variables"
   ) {{label}} 
 
@@ -48,24 +48,41 @@ button(
   font-weight: 600;
   line-height: 24px;
 
+  &_disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    &:hover,
+    &:active,
+    &:focus {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+  }
+
   &_primary {
     background: $primary;
     border: 1px solid $primary;
-    &:hover {
-      background: $primary-hover;
-    }
-    &:active {
-      background: $primary-active;
+
+    &:not(.btn_disabled) {
+      &:hover {
+        background: $primary-hover;
+      }
+      &:active {
+        background: $primary-active;
+      }
     }
 
     &_outlined {
       background: transparent;
       color: $primary;
-      &:hover {
-        background: $neutral-50;
-      }
-      &:active {
-        background: $secondary;
+
+      &:not(.btn_disabled) {
+        &:hover {
+          background: $neutral-50;
+        }
+        &:active {
+          background: $secondary;
+        }
       }
     }
   }
