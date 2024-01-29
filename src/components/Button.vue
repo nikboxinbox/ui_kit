@@ -17,13 +17,21 @@ const props = defineProps({
     default: false,
   },
 });
+
+const emit = defineEmits(["click"]);
+
+const clickOnBtn = () => {
+  if (!props.disabled) {
+    emit("click");
+  }
+};
 </script>
 
 <template lang="pug">
 
 button(
   :class="['btn', `btn_${color}`,{[`btn_${color}_outlined`]: outlined}, {'btn_disabled': disabled}]"
-  :style="variables"
+  @click="clickOnBtn"
   ) {{label}} 
 
 </template>
@@ -52,8 +60,7 @@ button(
     opacity: 0.5;
     cursor: not-allowed;
     &:hover,
-    &:active,
-    &:focus {
+    &:active {
       opacity: 0.5;
       cursor: not-allowed;
     }
