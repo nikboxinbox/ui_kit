@@ -5,6 +5,7 @@ import TypographyPage from '@/views/TypographyPage.vue'
 import CheckboxPage from '@/views/CheckboxPage.vue'
 import LogoPage from '@/views/LogoPage.vue'
 import SwitcherPage from '@/views/SwitcherPage.vue'
+import ModalPage from '@/views/ModalPage.vue'
 
 const router = createRouter({
     history: createWebHistory(),
@@ -38,6 +39,11 @@ const router = createRouter({
             path: '/switcher',
             name: 'Switcher',
             component: SwitcherPage
+        },
+        {
+            path: '/modal',
+            name: 'Modal',
+            component: ModalPage
         },
     ]
 })
