@@ -2,7 +2,7 @@
 import LogoTitle from "@/components/LogoTitle.vue";
 </script>
 <template lang="pug">
-h1.headline-2 Logo title 
+h1.headline-2 LogoTitle 
 .line_block 
   LogoTitle
 </template>

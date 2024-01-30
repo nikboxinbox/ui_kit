@@ -37,6 +37,15 @@ import LogoTitle from "@/components/LogoTitle.vue";
     line-height: 24px;
   }
 }
+
+.subtitles {
+  font-family: Inter, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0em;
+}
+
 .text_description {
   font-family: Open Sans, sans-serif;
   font-size: 12px;

@@ -4,6 +4,7 @@ import ButtonPage from '@/views/ButtonPage.vue'
 import TypographyPage from '@/views/TypographyPage.vue'
 import CheckboxPage from '@/views/CheckboxPage.vue'
 import LogoPage from '@/views/LogoPage.vue'
+import SwitcherPage from '@/views/SwitcherPage.vue'
 
 const router = createRouter({
     history: createWebHistory(),
@@ -32,6 +33,11 @@ const router = createRouter({
             path: '/logo',
             name: 'Logo',
             component: LogoPage
+        },
+        {
+            path: '/switcher',
+            name: 'Switcher',
+            component: SwitcherPage
         },
     ]
 })
