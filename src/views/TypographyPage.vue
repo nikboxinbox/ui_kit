@@ -1,13 +1,10 @@
-<script setup lang="ts">
-import LogoTitle from "@/components/LogoTitle.vue";
-</script>
+<script setup lang="ts"></script>
 <template>
   <h1 class="heading-1">Typography</h1>
   <h2 class="heading-1">Heading 1</h2>
   <h2 class="heading-2">Heading 2</h2>
   <h2 class="heading-3">Heading 3</h2>
   <h1 class="headline-2">Headline-2</h1>
-  <LogoTitle></LogoTitle>
 </template>
 
 <style lang="scss">
