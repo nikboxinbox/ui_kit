@@ -23,4 +23,13 @@
     font-weight: 300;
   }
 }
+
+.text_description {
+  font-family: Open Sans, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: left;
+}
 </style>

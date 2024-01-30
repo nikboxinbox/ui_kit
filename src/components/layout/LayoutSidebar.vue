@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { computed, ref } from "vue";
+import {  ref } from "vue";
 import { useRoute } from "vue-router";
 
 const route = useRoute();
@@ -14,6 +14,7 @@ const props = defineProps({
 const links = ref([
   { name: "Typography", href: "/typography" },
   { name: "Button", href: "/button" },
+  { name: "Checkbox", href: "/checkbox" },
 ]);
 </script>
 

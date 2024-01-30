@@ -20,7 +20,7 @@ const props = defineProps({
 
 const emit = defineEmits(["click"]);
 
-const clickOnBtn = () => {
+const clickOnBtn = (): void => {
   if (!props.disabled) {
     emit("click");
   }
