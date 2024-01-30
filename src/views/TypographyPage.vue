@@ -1,8 +1,13 @@
+<script setup lang="ts">
+import LogoTitle from "@/components/LogoTitle.vue";
+</script>
 <template>
   <h1 class="heading-1">Typography</h1>
   <h2 class="heading-1">Heading 1</h2>
   <h2 class="heading-2">Heading 2</h2>
   <h2 class="heading-3">Heading 3</h2>
+  <h1 class="headline-2">Headline-2</h1>
+  <LogoTitle></LogoTitle>
 </template>
 
 <style lang="scss">
@@ -24,6 +29,14 @@
   }
 }
 
+.headline {
+  &-2 {
+    font-family: Inter, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+  }
+}
 .text_description {
   font-family: Open Sans, sans-serif;
   font-size: 12px;

@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import {  ref } from "vue";
+import { ref } from "vue";
 import { useRoute } from "vue-router";
 
 const route = useRoute();
@@ -15,6 +15,7 @@ const links = ref([
   { name: "Typography", href: "/typography" },
   { name: "Button", href: "/button" },
   { name: "Checkbox", href: "/checkbox" },
+  { name: "Logo", href: "/logo" },
 ]);
 </script>
 
