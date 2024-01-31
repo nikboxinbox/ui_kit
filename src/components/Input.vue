@@ -1,3 +1,12 @@
+<!-- UIKit -->
+<template lang="pug">
+.custom-input(:class="{ 'invalid': !isValid }")
+  input(
+    :value="value" 
+    :placeholder="placeholder" 
+    @input="$emit('update:value', $event.target.value)").content_input
+  label.label().label_input {{ label }}
+</template>
 <script setup lang="ts">
 defineProps({
   label: {
@@ -18,15 +27,6 @@ defineProps({
   },
 });
 </script>
-
-<template lang="pug">
-.custom-input(:class="{ 'invalid': !isValid }")
-  input(
-    :value="value" 
-    :placeholder="placeholder" 
-    @input="$emit('update:value', $event.target.value)").content_input
-  label.label().label_input {{ label }}
-</template>
 
 <style lang="scss">
 .custom-input {

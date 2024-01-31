@@ -1,12 +1,9 @@
-<script setup lang="ts">
-const props = defineProps({});
-</script>
-
 <template lang="pug">
 .modal 
   slot
 
 </template>
+<script setup lang="ts"></script>
 
 <style lang="scss" scoped>
 .modal {
@@ -14,5 +11,7 @@ const props = defineProps({});
   width: 516px;
   box-shadow: 0px 4px 20px 0px #00000014;
   border-radius: 20px;
+  background-color:$background-light: #f8f8f8;
+
 }
 </style>
