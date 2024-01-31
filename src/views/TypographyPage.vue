@@ -8,6 +8,7 @@
 </template>
 
 <style lang="scss">
+// heading - это не для VCC !
 .heading {
   &-1 {
     font-size: 34px;
@@ -25,7 +26,7 @@
     font-weight: 300;
   }
 }
-
+// VCC
 .headline {
   &-2 {
     font-family: Inter, sans-serif;
