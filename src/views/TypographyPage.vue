@@ -43,7 +43,7 @@
 }
 
 .text_description {
-  font-family: Open Sans, sans-serif;
+  font-family: Inter, sans-serif;
   font-size: 12px;
   font-weight: 400;
   line-height: 16px;

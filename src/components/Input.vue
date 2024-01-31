@@ -48,7 +48,8 @@ defineProps({
     }
 
     &::placeholder {
-      color: #b5b5b5;
+      color: $text-dark;
+      opacity: 0.1;
     }
   }
 
@@ -61,7 +62,7 @@ defineProps({
 
   &.invalid {
     input {
-      border-color: #e91e63;
+      border-color: $error;
     }
   }
 }
