@@ -40,7 +40,6 @@
   font-size: 18px;
   font-weight: 600;
   line-height: 24px;
-  letter-spacing: 0em;
 }
 
 .text_description {
@@ -48,7 +47,19 @@
   font-size: 12px;
   font-weight: 400;
   line-height: 16px;
-  letter-spacing: 0em;
-  text-align: left;
+}
+
+.content_input {
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.label_input {
+  font-family: Inter, sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
 }
 </style>

@@ -19,6 +19,7 @@ const links = ref([
   { name: "Switcher", href: "/switcher" },
   { name: "Modal", href: "/modal" },
   { name: "Background", href: "/background-waves" },
+  { name: "Input", href: "/input" },
 ]);
 </script>
 

@@ -7,6 +7,8 @@ import LogoPage from '@/views/LogoPage.vue'
 import SwitcherPage from '@/views/SwitcherPage.vue'
 import ModalPage from '@/views/ModalPage.vue'
 import BackgroundImgPage from '@/views/BackgroundImgPage.vue'
+import InputPage from '@/views/InputPage.vue'
+
 
 const router = createRouter({
     history: createWebHistory(),
@@ -50,6 +52,11 @@ const router = createRouter({
             path: '/background-waves',
             name: 'Background',
             component: BackgroundImgPage
+        },
+        {
+            path: '/input',
+            name: 'Input',
+            component: InputPage
         },
     ]
 })
