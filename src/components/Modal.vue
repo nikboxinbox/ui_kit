@@ -11,7 +11,6 @@
   width: 516px;
   box-shadow: 0px 4px 20px 0px #00000014;
   border-radius: 20px;
-  background-color:$background-light: #f8f8f8;
-
+  background-color: $background-light;
 }
 </style>

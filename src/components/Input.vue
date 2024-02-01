@@ -33,13 +33,12 @@ defineProps({
   position: relative;
 
   input {
-    width: 100%;
-    max-width: 312px;
+    width: 312px;
     height: 62px;
     padding: 27px 20px 11px 20px;
     color: $text-dark;
-    border: 1px solid $background-light;
-    background-color: $background-light;
+    border: 1px solid $background-field;
+    background-color: $background-field;
     border-radius: 8px;
 
     &:focus {

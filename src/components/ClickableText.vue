@@ -1,3 +1,7 @@
+<!-- UIKit -->
+<template lang="pug">
+span(:class="['text',`text_${color}`]") {{ text }}
+</template>
 <script setup lang="ts">
 defineProps({
   text: {
@@ -10,10 +14,6 @@ defineProps({
   },
 });
 </script>
-
-<template lang="pug">
-span(:class="['text',`text_${color}`]") {{ text }}
-</template>
 
 <style lang="scss" scoped>
 .text {

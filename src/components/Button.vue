@@ -1,3 +1,12 @@
+<template lang="pug">
+
+button(
+  :class="['btn', `btn_${color}`,{[`btn_${color}_outlined`]: outlined}, {'btn_disabled': disabled}]"
+  @click="clickOnBtn"
+  ) {{label}} 
+
+</template>
+
 <script setup lang="ts">
 const props = defineProps({
   label: {
@@ -26,16 +35,6 @@ const clickOnBtn = (): void => {
   }
 };
 </script>
-
-<template lang="pug">
-
-button(
-  :class="['btn', `btn_${color}`,{[`btn_${color}_outlined`]: outlined}, {'btn_disabled': disabled}]"
-  @click="clickOnBtn"
-  ) {{label}} 
-
-</template>
-
 <style lang="scss" scoped>
 .btn {
   margin-right: 10px;

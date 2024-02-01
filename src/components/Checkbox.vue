@@ -1,3 +1,15 @@
+<!-- UIKit -->
+<template lang="pug">
+div(:class="['checkbox', `checkbox_${color}`]") 
+  input(
+    type="checkbox"
+    :checked="checked"
+    @input="emits('update:checked', $event.target.checked)"
+    :disabled="disabled"
+    id="chekboxId"
+    )
+  label(for="chekboxId").text_description {{ label }}
+</template>
 <script setup lang="ts">
 const emits = defineEmits(["update:checked"]);
 
@@ -17,18 +29,6 @@ const props = defineProps({
   },
 });
 </script>
-
-<template lang="pug">
-div(:class="['checkbox', `checkbox_${color}`]") 
-  input(
-    type="checkbox"
-    :checked="checked"
-    @input="emits('update:checked', $event.target.checked)"
-    :disabled="disabled"
-    id="chekboxId"
-    )
-  label(for="chekboxId").text_description {{ label }}
-</template>
 
 <style lang="scss" scoped>
 .checkbox {
