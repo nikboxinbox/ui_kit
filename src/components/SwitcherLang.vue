@@ -1,6 +1,6 @@
 <script setup lang="ts">
 defineProps({
-  language: {
+  lang: {
     type: String,
     default: "ru",
     validator: (value: string) => {
@@ -9,22 +9,24 @@ defineProps({
   },
 });
 
-const emits = defineEmits(["update:language"]);
+const emits = defineEmits(["set_language"]);
+const setLanguage = (lang: "ru" | "en") => emits("set_language", lang);
 </script>
 
 <template lang="pug">
-.swither-lang().subtitles 
+.swither-lang().subtitles
   span.lang(
-    :class="{ 'lang--active': language === 'ru' }"
-    @click="emits('update:language', 'ru')"
+    :class="{ 'lang--active': lang === 'ru' }"
+    @click="setLanguage('ru')"
+    @key.enter="setLanguage('ru')") RU
 
-  ) RU 
   .vertical-line
-  span.lang(
-    :class="{ 'lang--active': language === 'en' }"
-    @click="emits('update:language', 'en')"
 
-  ) EN
+  span.lang(
+    :class="{ 'lang--active': lang === 'en' }"
+    @click="setLanguage('en')"
+    @key.enter="setLanguage('en')") ENG
+
 </template>
 
 <style lang="scss">

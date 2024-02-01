@@ -1,9 +1,10 @@
+<!-- UIKit -->
 <template lang="pug">
 
 button(
   :class="['btn', `btn_${color}`,{[`btn_${color}_outlined`]: outlined}, {'btn_disabled': disabled}]"
   @click="clickOnBtn"
-  ) {{label}} 
+  ) {{label}}
 
 </template>
 
@@ -37,9 +38,6 @@ const clickOnBtn = (): void => {
 </script>
 <style lang="scss" scoped>
 .btn {
-  margin-right: 10px;
-  margin-bottom: 10px;
-
   width: 100%;
   max-width: 316px;
   height: 64px;
