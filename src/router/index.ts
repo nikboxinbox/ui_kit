@@ -8,7 +8,7 @@ import SwitcherPage from '@/views/SwitcherPage.vue'
 import ModalPage from '@/views/ModalPage.vue'
 import BackgroundImgPage from '@/views/BackgroundImgPage.vue'
 import InputPage from '@/views/InputPage.vue'
-
+import PopupPage from '@/views/PopupPage.vue'
 
 const router = createRouter({
     history: createWebHistory(),
@@ -57,6 +57,11 @@ const router = createRouter({
             path: '/input',
             name: 'Input',
             component: InputPage
+        },
+        {
+            path: '/popup',
+            name: 'Popup',
+            component: PopupPage
         },
     ]
 })

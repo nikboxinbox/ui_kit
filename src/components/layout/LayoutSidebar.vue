@@ -20,6 +20,7 @@ const links = ref([
   { name: "Modal", href: "/modal" },
   { name: "Background", href: "/background-waves" },
   { name: "Input", href: "/input" },
+  { name: "Popup", href: "/popup" },
 ]);
 </script>
 

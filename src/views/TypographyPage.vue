@@ -63,4 +63,12 @@
   font-weight: 600;
   line-height: 16px;
 }
+
+.small_text {
+  //styleName: Small text SB;
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 15px;
+}
 </style>

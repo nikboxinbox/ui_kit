@@ -61,7 +61,7 @@ defineProps({
 
   &.invalid {
     input {
-      border-color: $error;
+      border-color: $alarm;
     }
   }
 }
